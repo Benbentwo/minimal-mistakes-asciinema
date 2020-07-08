@@ -10,7 +10,7 @@
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
         {% if f.source %}
-          <div class="archive__item-teaser"{% if f.width %} style='width: "{{ f.width }}" !important;'{% endif %}>
+          <div class="archive__item-teaser"{% if f.width %} style='width: {{ f.width }} !important;'{% endif %}>
             <asciinema-player src="{{ f.source }}" speed="{{ site.casts.speed }}" theme="{{site.casts.theme}}" loop="{{ site.casts.loop }}" poster="{{ site.casts.poster}}"></asciinema-player>
             <img src="{{ f.image_path | relative_url }}"
                  alt="{% if f.alt %}{{ f.alt }}{% endif %}">
