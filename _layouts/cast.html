@@ -2,4 +2,4 @@
 layout: default
 ---
 
-<asciinema-player src="{{ page.source }}"></asciinema-player>
+<asciinema-player src="{{ page.source }}" cols="{{ page.cols | default 80}}" rows="{{ page.rows | default 24}}" autoplay={{ page.autoplay | default false }} preload={{ page.preload | default false }} loop={{ page.loop | default false }} start-at={{ page.start_at | default 0}} speed="{{ page.speed | default 1 }}" ></asciinema-player>
