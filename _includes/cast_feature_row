@@ -9,7 +9,7 @@
   {% for f in feature_row %}
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
-        {% if f.image_path %}
+        {% if f.source %}
           <div class="archive__item-teaser">
             <asciinema-player src="{{ f.source }}" speed="{{ site.casts.speed }}" theme="{{site.casts.theme}}" loop="{{ site.casts.loop }}" poster="{{ site.casts.poster}}"></asciinema-player>
             <img src="{{ f.image_path | relative_url }}"
